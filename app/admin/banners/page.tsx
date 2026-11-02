@@ -272,7 +272,7 @@ export default function BannersPage() {
       <div className="flex items-center justify-between p-2 md:p-4">
         <div>
           <h1 className="text-4xl text-secondary font-bold tracking-tighter">
-            whitewalk
+            happykickx
           </h1>
           <p className="text-xs md:text-sm text-gray-50 bg-secondary px-2 p-1 rounded tracking-tight font-semibold">
             Manage Banners

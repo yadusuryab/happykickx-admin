@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "whitewalk Admin",
+  title: "happykickx Admin",
   description: "Manage Products",
 };
 

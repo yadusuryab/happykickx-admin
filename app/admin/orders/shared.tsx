@@ -21,19 +21,10 @@ export interface OrderItem {
 }
 
 export type Fulfillment =
-  | "pending"
-  | "processing"
-  | "shipped"
-  | "delivered"
-  | "cancelled";
+  "pending" | "processing" | "shipped" | "delivered" | "cancelled";
 
 export type PaymentStatus =
-  | "verifying"
-  | "paid"
-  | "pending"
-  | "rejected"
-  | "failed"
-  | "refunded";
+  "verifying" | "paid" | "pending" | "rejected" | "failed" | "refunded";
 
 export interface Order {
   _id: string;
@@ -159,7 +150,7 @@ export const waLink = (o: Order) => {
     const price = it.isFreeItem ? "FREE" : `₹${it.price}`;
     // Schema has no slug, so this uses the product id. Match your route.
     const url = it.productId
-      ? `\n   🔗 https://whitewalk.in/product/${it.productId}`
+      ? `\n   🔗 https://happykickx.in/product/${it.productId}`
       : "";
     return `${i + 1}. ${it.productName} (Size ${it.size}) - ${price}${url}`;
   });
@@ -178,7 +169,7 @@ Are you still planning to order?
 Reply here, we'll confirm it right away.
 Stock is limited!
 
-🎁 More offers: https://whitewalk.in/offer`;
+🎁 More offers: https://happykickx.in/offer`;
   return `https://wa.me/91${normPhone(o.contact1)}?text=${encodeURIComponent(msg)}`;
 };
 
